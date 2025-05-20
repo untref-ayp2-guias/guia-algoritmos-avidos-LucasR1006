@@ -7,11 +7,11 @@ type Actividad struct {
 }
 
 func SelectorRecursivo(actividades []Actividad) []Actividad {
-	pepe2 := make([]Actividad, 0)
+	arreglo := make([]Actividad, 0)
 
-	pepe2 = append(pepe2, actividades[0])
+	arreglo = append(arreglo, actividades[0])
 
-	return Selector(actividades[1:], pepe2)
+	return Selector(actividades[1:], arreglo)
 }
 
 func Selector(actividades []Actividad, array []Actividad) []Actividad {
